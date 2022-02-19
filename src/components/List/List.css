@@ -1,0 +1,46 @@
+.list__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.list__header input {
+    padding: 16px;
+    border: none;
+    font-size: 16px;
+}
+
+.list__header button {
+    padding: 16px;
+    background: #61dafb;
+    color: #121212;
+    border: none;
+    font-size: 16px;
+}
+
+.list__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    text-align: left;
+    padding: 16px;        
+}
+
+.list__item {
+    flex: 1;
+    list-style: none;
+    margin: 16px 8px;
+    padding: 16px;
+    border-left: 4px solid #61dafb;
+}
+
+.list__item button {
+    padding: 8px;  
+    background: transparent;  
+    color: #61dafb;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 16px;  
+    cursor: pointer;
+}
