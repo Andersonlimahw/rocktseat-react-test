@@ -3,6 +3,10 @@ import userEvent from '@testing-library/user-event';
 import List from './index';
 
 describe('List component', () => {
+    it('should match to snapshot', () => {
+        const { asFragment } = render(<List initialItems={['Anderson', 'Anthony']} />);        
+        expect(asFragment).toMatchSnapshot();        
+    });
     it('should render list items', () => {
         const { getByText, debug } = render(<List initialItems={['Anderson', 'Anthony']} />);
         debug();
